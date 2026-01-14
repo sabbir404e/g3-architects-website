@@ -28,6 +28,16 @@
     background-color: rgba(255, 144, 14, 0.1);
 }
 
+.btn-primary{
+    background-color: #FF900E;
+    color: white;
+    padding: 20px 25px;
+    font-weight: 600;
+    font-size: 1.4rem;
+    border-radius: 8px;
+    border: none;
+}
+
 /* header styles */
 
 
@@ -36,6 +46,13 @@
 
 .navbar{
  justify-content: space-between;
+ align-items: center;
+}
+
+.brand{
+    font-weight: 700;
+    font-size: 3rem;
+    /* 16px = 1 rem */
 }
 
 .nav-item{
@@ -50,4 +67,28 @@
 .navbar, .banner{
     max-width: 1440px;
     margin: 0 auto;
+}
+
+/* banner related styles */
+.banner-content{
+    max-width: 862px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.banner-title{
+
+    max-width: 700;
+    font-size: 4rem;
+}
+
+.banner-image{
+    width: 100%;
+}
+
+@media screen and (max-width: 576px){
+    .navbar, .nav-links{
+        flex-direction: column;
+    }
 }
